@@ -1,6 +1,6 @@
 {
   "name": "new-line-obj",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "an object wrapper for a new line character sequence",
   "license": "MIT",
   "repository": "jamestalmage/new-line-obj",
