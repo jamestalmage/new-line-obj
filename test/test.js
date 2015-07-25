@@ -25,6 +25,11 @@ describe('new-line-obj', function() {
     assert.strictEqual(new NewLineObj('\r\n').isWindowsNewLine, true);
   });
 
+  it('isUnixNewLine', function() {
+    assert.strictEqual(new NewLineObj('\n').isUnixNewLine, true);
+    assert.strictEqual(new NewLineObj('\r\n').isUnixNewLine, false);
+  });
+
   it('can be used without new keyword', function() {
     assert.strictEqual(newLineObj('\r\n').valueOf(), '\r\n');
     assert.strictEqual(newLineObj('\n').valueOf(), '\n');

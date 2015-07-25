@@ -1,7 +1,7 @@
 {
   "name": "new-line-obj",
   "version": "0.0.0",
-  "description": "My impressive module",
+  "description": "an object wrapper for a new line character sequence",
   "license": "MIT",
   "repository": "jamestalmage/new-line-obj",
   "author": {

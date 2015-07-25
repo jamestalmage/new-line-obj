@@ -1,6 +1,6 @@
 # new-line-obj 
 
-My impressive module
+an object wrapper for a new line character sequence
 
 [![Build Status](https://travis-ci.org/jamestalmage/new-line-obj.svg?branch=master)](https://travis-ci.org/jamestalmage/new-line-obj)
 [![Coverage Status](https://coveralls.io/repos/jamestalmage/new-line-obj/badge.svg?branch=master&service=github)](https://coveralls.io/github/jamestalmage/new-line-obj?branch=master)
@@ -13,33 +13,20 @@ My impressive module
 ## Usage
 
 ```js
-var newLineObj = require('new-line-obj');
+var NewLine = require('new-line-obj');
 
-newLineObj('unicorns');
-//=> unicorns & rainbows
+new NewLine('\r\n').valueOf();
+//=> '\r\n';
+
+new NewLine('\r\n').isNewLine;
+//=> true
+
+new NewLine('\r\n').isWindowsNewLine;
+//=> true
+
+new NewLine('\n').isUnixNewLine;
+//=> true
 ```
-
-
-## API
-
-### newLineObj(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
 
 ## License
 
